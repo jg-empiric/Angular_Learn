@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
-  getData(val:string) {
-    console.log(val)
+  displayVal:string = '';
+  getValue(val:string) {
+    // console.log(val);
+    this.displayVal=val
   }
 
 }

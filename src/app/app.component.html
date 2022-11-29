@@ -1,10 +1,7 @@
 <h1>Function in Angular</h1>
-<button (click)="getData('hello')">Click me</button>
 <br><br>
-<input type="text" #box (keyup)="getData(box.value)" placeholder="event keyup" />
-<br><br>
-<input type="text" #box1 (keydown)="getData(box1.value)" placeholder="event keydown" />
-<br><br>
-<input type="text" #box2 (blur)="getData(box2.value)" placeholder="event blur" />
-<br><br>
-<input type="text" #box3 (input)="getData(box3.value)" placeholder="event input" />
+<input type="text" name="name" #box placeholder="Enter name" />
+<button (click)="getValue(box.value)">Click me</button>
+<p>
+ Box Value {{displayVal}}
+</p>
