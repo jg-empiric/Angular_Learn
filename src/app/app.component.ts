@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
-  getName(name:string) {
-    alert(name);
+  getData(val:string) {
+    console.log(val)
   }
 
 }
