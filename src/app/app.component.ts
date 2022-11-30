@@ -1,16 +1,13 @@
 import { Component } from '@angular/core';
-import {NgForm} from '@angular/forms'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'form';
-  userData: any = {};
-
-  getData(data:NgForm) {
-    console.log(data)
-    this.userData = data;
+  title = 'Toggle Element';
+  display = true;
+  toggleButton() {
+    this.display = !this.display;
   }
 }
