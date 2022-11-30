@@ -1,8 +1,10 @@
 <h1>{{title}}</h1>
-<h3 *ngFor="let item of users">
-    {{item}}
-</h3>
-<br><br><br>
-<h3 *ngFor="let item of usersDetails">
-    {{item.name}} --{{item.email}}
-</h3>
+<ul *ngFor="let user of users">
+    <li>{{user.name}}</li>
+    <li>{{user.email}}</li>
+    <li>{{user.phone}}</li>
+    <li>Social Accounts</li>
+    <ul *ngFor="let account of user.socialAccounts">
+        <li>{{account}}</li>
+    </ul>
+</ul>
