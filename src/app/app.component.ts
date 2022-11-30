@@ -7,10 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
-  displayVal:string = '';
-  getValue(val:string) {
-    // console.log(val);
-    this.displayVal=val
+  count:number = 0;
+  counter(type:string) {
+    type === 'add' ? this.count++ : this.count--
   }
 
 }
